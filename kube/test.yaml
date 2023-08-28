@@ -17,9 +17,9 @@ spec:
     volumeMounts:
     - name: html
       mountPath: /html
-    command: ["/bin/sh", "-C"]
+    command: ["/bin/sh", "-c"]
     args:
       - while true; do
-          date >> /htlp/index/html;
+          date >> /html/index.html;
           sleep 1;
         done
